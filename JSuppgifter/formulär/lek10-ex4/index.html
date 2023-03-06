@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>formulär ex4</title>
+        <meta name="description" content="javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+            <form name="myForm">
+              <input name="one" value="1">
+              <input name="two" value="2">
+            </form>
+
+            <br>
+
+              <form name="myForm2">
+                
+                <input type="radio" name="age" value="10">
+                <input type="radio" name="age" value="20">
+              </form>
+
+          <script>
+
+            /*
+
+            // Hämta form value
+            let form = document.forms.myForm;
+            // Hämta elementet
+            let elem = form.elements.one;
+            let elem2 = form.elements.two;
+            alert(elem.value);
+
+            */
+
+
+            let form2 = document.forms.myForm2;
+            let ageElems = form2.elements.age;
+            alert(ageElems.value); // [Object HTMLInputElement]
+
+          </script>
+
+    </body>
+</html>

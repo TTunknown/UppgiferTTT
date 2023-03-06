@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>uppg8</title>
+        <meta name="description" content="uppgift 8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+                    <input type="number" id="numInput">
+                    <button onclick="generateDivisibleNumbers()">Generate</button>
+                    <div id="output"></div>
+
+                    <script>
+                        function generateDivisibleNumbers() {
+                            var num = document.getElementById("numInput").value;
+                            var output = document.getElementById("output");
+                            output.innerHTML = "";
+
+                            var counter = 0;
+                            var i = 1;
+                            while (i <= 100 * num) {
+                                if (i % num === 0) {
+                                    output.innerHTML += i + " ";
+                                    counter++;
+                                    if (counter % 10 === 0) {
+                                        output.innerHTML += "<br>";
+                                    }
+                                }
+                                i++;
+                            }
+                        }
+                    </script>
+
+
+
+    </body>
+</html>

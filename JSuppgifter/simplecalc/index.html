@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Simple calc</title>
+        <meta name="description" content="javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+          <h2 class="main-title">Calculator</h2>
+
+          <form class="main-form">
+
+        <div class="num-inputs">
+            1st number: <input type="text" id="num1"><br>
+            2nd number: <input type="text" id="num2"><br>
+        </div>
+
+            <div class="input-box">
+              <input type="button" value="mul" onclick="multiply()">
+              <input type="button" value="div" onclick="divide()">
+              <input type="button" value="add" onclick="addition()">
+              <input type="button" value="min" onclick="minus()">
+            </div>
+
+          </form>
+
+        <div class="result-area">
+            <h3>Here is the Result:</h3>
+            <span id="result">
+              
+            </span>
+        </div>
+
+          <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

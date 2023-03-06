@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <form id="from1">
+            <input type="text" id="food">
+        </form>
+        <button onclick="showMeal()">click me</button>
+        <div id="mealdis"></div>
+        <form id="form2">
+            <input type="number" id="num1">
+            <input type="number" id="num2">
+            <select id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </form>
+        <button onclick="calc()">calculate</button><div id="calcdis"></div>
+        <form>
+            <input type="number" id="year1">
+            <input type="number" id="month1">
+            <input type="number" id="day1">
+            <br>
+            <input type="number" id="year2">
+            <input type="number" id="month2">
+            <input type="number" id="day2">
+        </form>
+        <button onclick="diff()">show difference</button>
+        <div id="diffdis"></div>
+        <form>
+            <input type="number" id="year">
+            <input type="number" id="month">
+            <input type="number" id="day">
+        </form>
+        <button onclick="bdiff()">show bdiff</button>
+        <div id="bdiffdis"></div>
+        <div id="age"></div>
+        
+        <script src="main.js"></script>
+    </body>
+</html>

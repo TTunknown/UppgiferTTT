@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>formulär5</title>
+        <meta name="description" content="javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+            <h1>Formulär</h1>
+
+            <form id="form">
+              
+              <input name="login">
+            </form>
+
+
+          <script>
+            alert(form.elements.login === form.login); // true, samma input
+            form.login.name = "username"; // ändrar namnet på input
+            // Formuläret har uppdaterats med namn
+            alert(form.elements.login); // undefined
+            alert(form.elements.username); // input [object HTMLInputElement]
+
+            // form tillåter båda namn, den nya och den gamla
+            alert(form.username === form.login); // true
+
+
+          </script>
+
+    </body>
+</html>
