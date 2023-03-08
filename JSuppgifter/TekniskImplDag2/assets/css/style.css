@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tilt Neon', cursive;
+
+    background-image: url("https://images7.alphacoders.com/301/thumb-1920-301522.jpg");
+  background-repeat: no-repeat;
+  background-position: relative;
+  background-size: cover;
+}
+
+#containerDiv {
+
+  padding: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  background: linear-gradient(#454545, #F9223F);
+
+  position: relative;
+  text-align: center;
+  justify-content: center;
+
+}
+
+#containerDiv div {
+
+  margin: 0px 50px;
+
+}
+
+#containerDiv div input {
+
+  text-align: center;
+
+  color: #FFF;
+  background-color: #F9223F;
+
+  border: #FFF solid 3px;
+  border-radius: 7px;
+
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+#genBut {
+
+  width: 120px;
+  height: 40px;
+
+  margin: 40px 0px;
+
+  font-size: 16px;
+  font-weight: 400;
+
+  text-align: center;
+
+  color: #FFF;
+  background-color: #F9223F;
+
+  border: #FFF solid 3px;
+  border-radius: 7px;
+
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+#genBut:hover {
+
+  border: #000 solid 4px;
+  background-color: #8ED241;
+  color: #000;
+
+  transition: 0.35s;
+
+}
+
+#selectionDiv {
+
+  padding: 10px;
+
+  background: linear-gradient(#000, #454545);
+  color: #FFF;
+
+  position: relative;
+  text-align: center;
+  justify-content: center;
+
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+#selectionDiv select {
+
+  width: 120px;
+  height: 40px;
+
+  border: #FFF solid 3px;
+  background-color: #F9223F;
+  border-radius: 2px;
+
+  position: relative;
+
+  font-family: 'Tilt Neon', cursive;
+
+}
+
+#selectionDiv h1 {
+
+  position: relative;
+
+  font-size: 24px;
+
+  font-family: 'Tilt Neon', cursive;
+
+}

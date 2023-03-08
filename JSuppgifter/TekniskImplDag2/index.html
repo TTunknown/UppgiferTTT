@@ -1,0 +1,57 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Teknisk Implementering Dag 2</title>
+        <meta name="description" content="JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <div id="selectionDiv">
+
+          <h1>Select the type of lottery you want to participate in:</h1>
+            <select name="lotteryType">
+              <option value="lottoval">Lotto</option>
+              <option value="euroval">Euro Jackpot</option>
+              <option value="vikingval">Viking Lotto</option>
+              <option value="kenoval">Keno</option>
+            </select>
+
+        </div>
+
+
+      <div id="containerDiv">
+
+        <div id="numDiv">
+          <h3>Number Amount:</h3>
+            <input type="text" id="numAmount">
+        </div>
+
+        <div id="lnumDiv">
+          <h3>L Number Amount:</h3>
+            <input type="text" id="lnumAmount">
+        </div>
+
+        <div id="rowDiv">
+          <h3>Row Amount:</h3>
+            <input type="text" id="rowAmount">
+        </div>
+
+        <div id="numGen">
+          <button type="button" id="genBut">Roll Numbers!</button>
+        </div>
+
+      </div>
+
+      
+
+          <script src="assets/js/main.js"></script>
+    </body>
+</html>

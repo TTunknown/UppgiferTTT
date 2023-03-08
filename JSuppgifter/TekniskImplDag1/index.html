@@ -15,8 +15,43 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
+            <!-- Skapar en navbar samt sätter 
+                 i olika frukernas poäng värde. -->
+            <nav id="nav-section">
+                <div>Fruitpoints</div>
 
-          
+                <p>🍇 = 10p</p>
+                <p>🍈 = 20p</p>
+                <p>🍉 = 30p</p>
+                <p>🍊 = 40p</p>
+                <p>🍋 = 50p</p>
+                <p>🍌 = 60p</p>
+
+                <p>🍍 = 70p</p>
+                <p>🥭 = 80p</p>
+                <p>🍎 = 90p</p>
+                <p>🍏 = 100p</p>
+                <p>🍐 = 150p</p>
+                <p>🍑 = 200p</p>
+                
+                <div>👑 = 500p</div>
+            </nav>
+
+            <!-- Fruits: 🍇 🍈 🍉 🍊 🍋 🍌 🍍 🥭 🍎 🍏 🍐 🍑 Bonus: 👑 -->
+            
+            <!-- Skapar "slots" vart alla
+                 priser kommer att synnas. -->
+            <div id="slots">
+                <div id="slot1"></div>
+                <div id="slot2"></div>
+                <div id="slot3"></div>
+            </div>
+
+            <!-- Skapar spin knappen och en
+                 "box" för den och också en onclick event -->
+            <div id="spin-section">
+                <button type="button" id="spinButton" onclick="spin()">Spin!</button>
+            </div>
 
         <script src="assets/js/main.js"></script>
     </body>
